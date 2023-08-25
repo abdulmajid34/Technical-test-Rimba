@@ -56,35 +56,37 @@
   </section>
 
   <section style="padding-bottom: 10rem; background-color: #fff;">
-    <div class="row mx-3" style="margin-right: 0;">
-      <div class="col-md-3 text-center">
-        <div class="card style-card"> 
-          <h2>Novel</h2>
+    <div class="container">
+      <div class="row" style="margin-right: 0;">
+        <div class="col-md-3 text-center">
+          <div class="style-card"> 
+            <h2>Novel</h2>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3 text-center">
-        <div class="card style-card">
-          <h2>
-            Comic
-          </h2>
+        <div class="col-md-3 text-center">
+          <div class="style-card">
+            <h2>
+              Comic
+            </h2>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3 text-center">
-        <div class="card style-card">
-          <h2>Technology</h2>
-        </div>
-      </div>  
-      <div class="col-md-3 text-center">
-        <div class="card style-card">
-          <h2>Kids</h2>
+        <div class="col-md-3 text-center">
+          <div class="style-card">
+            <h2>Technology</h2>
+          </div>
+        </div>  
+        <div class="col-md-3 text-center">
+          <div class="style-card">
+            <h2>Kids</h2>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <section>
-    <div class="row" style="margin-right: 0;">
-      <div class="col-md-7" style="height: 500px;">
+    <div class="row" style="margin-right: 0; height: 400px;">
+      <div class="col-md-7">
         <div class="fixed-image">
           <img src="../assets/images/olesia-buyar-ZD03qVhBJZg-unsplash.jpg" alt="Gambar Tetap">
         </div>
@@ -94,8 +96,69 @@
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed exercitationem quidem beatae eius explicabo quibusdam debitis magnam sapiente. Laborum sint rerum praesentium blanditiis ea. Dolor vel aliquid eaque eos! Dolore facere provident maiores quae? Dolor excepturi quia debitis veritatis placeat numquam deleniti obcaecati nam accusamus eligendi vero perspiciatis, provident perferendis!</p>
       </div>
     </div>
+
+    
   </section>
-  
+
+  <section style="background-color: #FFF5E0; padding-top: 10rem;">
+    
+    <div class="container">
+      <div class="row" style="margin-right: 0;">
+        <span class="text-center" style="font-size: 80px; color: #d5802b;"><i class="bi bi-quote"></i></span>
+        <p class="text-center" style="font-size: 40px;">Dengan membaca kamu mengenal dunia. Dengan menulis kamu dikenal dunia.</p>
+      </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,176C384,149,480,75,576,64C672,53,768,107,864,138.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  </section>
+
+  <section style="padding-top: 10rem; background-color: #fff;">
+    <div class="container">
+      <div class="row" style="margin-bottom: 5rem;">
+        <div class="text-center">
+          <h2>Recommendation</h2>
+        </div>
+      </div>
+      <div class="row" style="margin-right: 0;">        
+          <div class=" col-md-4">
+            <div class="card style-card-list">              
+                <img src="../assets/images/shayna-douglas-LVtTIR8SyjU-unsplash.jpg" alt="gambar1">              
+              <span class="title-book">Buku 1</span>
+            </div>
+          </div>
+          <div class=" col-md-4">
+            <div class="card style-card-list">              
+                <img src="../assets/images/annie-spratt-5Ufh1edjdak-unsplash.jpg" alt="gambar1">              
+              <span class="title-book">Buku 2</span>
+            </div>
+          </div>
+          <div class=" col-md-4">
+            <div class="card style-card-list">              
+                <img src="../assets/images/aziz-acharki-gXndgCS-CGo-unsplash.jpg" alt="gambar1">              
+              <span class="title-book">Buku 3</span>
+            </div>
+          </div>
+          <div class=" col-md-4 my-4">
+            <div class="card style-card-list">              
+                <img src="../assets/images/dariusz-sankowski-dvK_CT1Wg78-unsplash.jpg" alt="gambar1">              
+              <span class="title-book">Buku 4</span>
+            </div>
+          </div>
+          <div class=" col-md-4 my-4">
+            <div class="card style-card-list">              
+                <img src="../assets/images/nong-9pw4TKvT3po-unsplash.jpg" alt="gambar1">              
+              <span class="title-book">Buku 5</span>
+            </div>
+          </div>
+          <div class=" col-md-4 my-4">
+            <div class="card style-card-list">              
+                <img src="../assets/images/thoa-ngo-UhdlN7u87nA-unsplash.jpg" alt="gambar1">              
+              <span class="title-book">Buku 6</span>
+            </div>
+          </div>
+        </div>      
+    </div>
+  </section>
 </template>
 
 <script>
@@ -138,13 +201,18 @@
     const navbar = document.getElementById("navbar");
 
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 20) {
-        console.log(window.screenY, 'scroll');
+      if (window.scrollY > 50) {
         navbar.classList.add("sticky");
       } else {
         navbar.classList.remove("sticky");
       }
     });
+
+    window.addEventListener('scroll', () => {
+      if(window.screenY == 0) {
+        navbar.classList.add("sticky");
+      }
+    })
 
   });
 
@@ -193,17 +261,32 @@
     image-rendering: auto; 
     object-fit: cover;
     width: 50%;
-    /* height: 600px; */
-    top: 70%; 
+    height: 400px;
+    top: 50%; 
     left: 30%; 
     transform: translate(-50%, -50%); 
     z-index: -1; 
+  }
+  
+  .style-card-list img {
+    width: 100%;    
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .style-card-list .title-book {
+      position: absolute;
+      top: 80%;
+      color: white;
+      font-weight: 700;
+      font-size: 25px;
+      padding-left: 10px;      
   }
 
   @media only screen and (max-width: 768px) {
     #navbar {
       background-color: #fff;
-    }
+    }    
   }
 
   @media only screen and (max-width: 600px) {
